@@ -1,0 +1,2858 @@
+PHPUnit 4.4.1 by Sebastian Bergmann.
+
+.Array
+(
+    [0] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213413520
+                    [_refObjectUUID] => 7b88dd59-b400-448f-b8f4-e0fbb392e7fd
+                    [_objectVersion] => 2
+                    [_refObjectName] => Understand EQI Code
+                    [CreationDate] => 2015-01-11T23:12:12.933Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213413520
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213413520/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213413520/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148862
+                    [LastUpdateDate] => 2015-01-14T03:28:10.091Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213413520/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Understand EQI Code
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213413521
+                            [_refObjectUUID] => a00179ff-0768-4b91-84a9-b0f607377023
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213413520/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 2
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213413520/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 2
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 0
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [1] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213419136
+                    [_refObjectUUID] => 2f434915-c600-424c-8f2b-0943536677de
+                    [_objectVersion] => 3
+                    [_refObjectName] => Teach Richina to write EQI unit tests
+                    [CreationDate] => 2015-01-11T23:12:44.917Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213419136
+                    [VersionId] => 3
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213419136/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213419136/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148863
+                    [LastUpdateDate] => 2015-01-14T03:31:31.265Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213419136/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Teach Richina to write EQI unit tests
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213419137
+                            [_refObjectUUID] => f597630e-416e-4004-bf43-e4e9336c262d
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213419136/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 4
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213419136/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 1
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [2] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213496704
+                    [_refObjectUUID] => 2f42cd5d-8a78-4fa0-ad45-75c43f1a61c9
+                    [_objectVersion] => 6
+                    [_refObjectName] => EQI Code Refactoring to reduce Complexity and Testability
+                    [CreationDate] => 2015-01-11T23:17:27.219Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213496704
+                    [VersionId] => 6
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213496704/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213496704/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148864
+                    [LastUpdateDate] => 2015-01-14T03:28:03.203Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213496704/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => EQI Code Refactoring to reduce Complexity and Testability
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213496705
+                            [_refObjectUUID] => 2ee4ba03-d20b-4624-b2e1-c44d2276002a
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213496704/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 1
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213496704/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 1
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 2
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [3] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213632600
+                    [_refObjectUUID] => fb5135cc-1fff-420a-bbcc-9e02f8b06b25
+                    [_objectVersion] => 2
+                    [_refObjectName] => Coordinate with teammates to find the best time to work and find time for internal scrum meetings
+                    [CreationDate] => 2015-01-11T23:21:02.494Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213632600
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213632600/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213632600/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148865
+                    [LastUpdateDate] => 2015-01-11T23:21:12.089Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213632600/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Coordinate with teammates to find the best time to work and find time for internal scrum meetings
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213632601
+                            [_refObjectUUID] => 19634f5b-8152-40d8-8d3b-81305e66db9a
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213632600/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213632600/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0H%}uV;hUYZ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 3
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 0
+                    [TimeSpent] => 0
+                    [ToDo] => 3
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28213501020
+                            [_refObjectUUID] => 94c8fc5e-8e3c-4614-b9be-592160534cbc
+                            [_refObjectName] => INFRASTRUCTURE:  Team Maintenance
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [4] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213634349
+                    [_refObjectUUID] => 5859e4a5-1824-431e-8b86-c3eea73658f9
+                    [_objectVersion] => 2
+                    [_refObjectName] => Agile Education with Rally
+                    [CreationDate] => 2015-01-11T23:21:46.511Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213634349
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213634349/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213634349/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148866
+                    [LastUpdateDate] => 2015-01-11T23:21:51.209Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213634349/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Agile Education with Rally
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213634350
+                            [_refObjectUUID] => 0fea9c05-687d-4f54-913c-f71f6bc727ee
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213634349/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213634349/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0H%}uV;hUYZ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 3
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 1
+                    [TimeSpent] => 0
+                    [ToDo] => 3
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28213501020
+                            [_refObjectUUID] => 94c8fc5e-8e3c-4614-b9be-592160534cbc
+                            [_refObjectName] => INFRASTRUCTURE:  Team Maintenance
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [5] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213639413
+                    [_refObjectUUID] => 26290238-c985-4075-b33d-bc48001e4d2e
+                    [_objectVersion] => 3
+                    [_refObjectName] => Generate PHP Unit Testing Documents
+                    [CreationDate] => 2015-01-11T23:24:33.168Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213639413
+                    [VersionId] => 3
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213639413/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213639413/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148867
+                    [LastUpdateDate] => 2015-01-11T23:24:38.135Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213639413/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Generate PHP Unit Testing Documents
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213639414
+                            [_refObjectUUID] => e48bf555-d75a-4de7-8fcf-8b7b9ebc36c4
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213639413/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213639413/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0GXp>NyK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 0
+                    [TimeSpent] => 0
+                    [ToDo] => 4
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28187719033
+                            [_refObjectUUID] => d736dc7f-44dd-4d48-94a5-c1c17e71e1a4
+                            [_refObjectName] => INFRASTRUCTURE:  Unit Testing and E2E Testing
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [6] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213744944
+                    [_refObjectUUID] => 30d68e23-1e93-4437-9969-e3f117816421
+                    [_objectVersion] => 2
+                    [_refObjectName] => Educate Teammates on how to use PHP Unit
+                    [CreationDate] => 2015-01-11T23:25:09.640Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213744944
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213744944/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213744944/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148868
+                    [LastUpdateDate] => 2015-01-11T23:25:13.726Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213744944/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Educate Teammates on how to use PHP Unit
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213744945
+                            [_refObjectUUID] => 6304b8d3-ca98-4344-a28d-412322e27c2c
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213744944/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213744944/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0GXp>NyK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Defined
+                    [TaskIndex] => 1
+                    [TimeSpent] => 0
+                    [ToDo] => 4
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28187719033
+                            [_refObjectUUID] => d736dc7f-44dd-4d48-94a5-c1c17e71e1a4
+                            [_refObjectName] => INFRASTRUCTURE:  Unit Testing and E2E Testing
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [7] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213746737
+                    [_refObjectUUID] => 740a967f-1f21-4671-b808-b40a6d5227e9
+                    [_objectVersion] => 2
+                    [_refObjectName] => Generate Doc for AngularJS Testing with Karma
+                    [CreationDate] => 2015-01-11T23:26:32.795Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213746737
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213746737/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213746737/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148869
+                    [LastUpdateDate] => 2015-01-11T23:26:41.627Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213746737/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Generate Doc for AngularJS Testing with Karma
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213746738
+                            [_refObjectUUID] => d9b6212f-b94a-41b6-81aa-e24f5bac0181
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213746737/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213746737/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0GXp>NyK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 5
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Defined
+                    [TaskIndex] => 2
+                    [TimeSpent] => 0
+                    [ToDo] => 5
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28187719033
+                            [_refObjectUUID] => d736dc7f-44dd-4d48-94a5-c1c17e71e1a4
+                            [_refObjectName] => INFRASTRUCTURE:  Unit Testing and E2E Testing
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [8] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213927938
+                    [_refObjectUUID] => 136b199b-3607-47cf-af4f-9c8e2ff5365c
+                    [_objectVersion] => 2
+                    [_refObjectName] => Educate Teammates on AngularJS Testing
+                    [CreationDate] => 2015-01-11T23:33:11.314Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213927938
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213927938/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213927938/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148870
+                    [LastUpdateDate] => 2015-01-11T23:33:20.853Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213927938/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Educate Teammates on AngularJS Testing
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213927939
+                            [_refObjectUUID] => 4ecda7db-b2c7-4731-8018-a100c4d968e2
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213927938/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213927938/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0GXp>NyK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Defined
+                    [TaskIndex] => 3
+                    [TimeSpent] => 0
+                    [ToDo] => 4
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28187719033
+                            [_refObjectUUID] => d736dc7f-44dd-4d48-94a5-c1c17e71e1a4
+                            [_refObjectName] => INFRASTRUCTURE:  Unit Testing and E2E Testing
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [9] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28213933085
+                    [_refObjectUUID] => c6759165-bb4d-46cc-80f2-c95875d65c28
+                    [_objectVersion] => 3
+                    [_refObjectName] => Study/add document the Frontend Rally plugin
+                    [CreationDate] => 2015-01-11T23:36:08.170Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28213933085
+                    [VersionId] => 3
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213933085/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213933085/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148871
+                    [LastUpdateDate] => 2015-01-13T16:31:17.751Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213933085/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Study/add document the Frontend Rally plugin
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28213933086
+                            [_refObjectUUID] => 7741344d-2301-4a85-b67a-61013f124e7a
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213933085/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28213933085/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0:;^?5|E>*Z?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 6
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 0
+                    [TimeSpent] => 0
+                    [ToDo] => 6
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28213928122
+                            [_refObjectUUID] => 8c87d948-bfa7-4968-9685-5ef0bdf892b6
+                            [_refObjectName] => TEST PLANNER:  Extract Reusable code from Rally Plugin
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [10] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28215026332
+                    [_refObjectUUID] => e8991b42-6b96-41bd-a113-388cd44672e1
+                    [_objectVersion] => 2
+                    [_refObjectName] => Setup working environment
+                    [CreationDate] => 2015-01-12T00:24:09.612Z
+                    [_CreatedAt] => Jan 11
+                    [ObjectID] => 28215026332
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28215026332/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28215026332/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148872
+                    [LastUpdateDate] => 2015-01-12T00:24:14.272Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28215026332/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Setup working environment
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28215026333
+                            [_refObjectUUID] => e070f36f-7130-48be-ae6c-aea2e9e0fd5b
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28215026332/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28215026332/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0:;^?5|E>*Z?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 2
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 1
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28213928122
+                            [_refObjectUUID] => 8c87d948-bfa7-4968-9685-5ef0bdf892b6
+                            [_refObjectName] => TEST PLANNER:  Extract Reusable code from Rally Plugin
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [11] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28272338185
+                    [_refObjectUUID] => 8577a9f9-96d6-4689-b98c-f9cc71dffc18
+                    [_objectVersion] => 3
+                    [_refObjectName] => Back End Services API Proposal
+                    [CreationDate] => 2015-01-12T22:12:06.151Z
+                    [_CreatedAt] => Jan 12
+                    [ObjectID] => 28272338185
+                    [VersionId] => 3
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28272338185/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28272338185/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA148977
+                    [LastUpdateDate] => 2015-01-13T03:46:28.721Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28272338185/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Back End Services API Proposal
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28272338186
+                            [_refObjectUUID] => 3a99466f-3a4f-4e82-b959-58b9c6c32278
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28272338185/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28272338185/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~{V0:;^?5|E>*Z?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 3
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 2
+                    [TimeSpent] => 0
+                    [ToDo] => 3
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28213928122
+                            [_refObjectUUID] => 8c87d948-bfa7-4968-9685-5ef0bdf892b6
+                            [_refObjectName] => TEST PLANNER:  Extract Reusable code from Rally Plugin
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [12] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28283646074
+                    [_refObjectUUID] => 9d61549e-4c33-426b-a96f-7ace5cd521d3
+                    [_objectVersion] => 6
+                    [_refObjectName] => Setup the Restful API framework for EQI and Mentoring Richina
+                    [CreationDate] => 2015-01-13T03:40:46.915Z
+                    [_CreatedAt] => Jan 12
+                    [ObjectID] => 28283646074
+                    [VersionId] => 6
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28283646074/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28283646074/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA149016
+                    [LastUpdateDate] => 2015-01-13T21:47:13.881Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28283646074/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Setup the Restful API framework for EQI and Mentoring Richina
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28283646075
+                            [_refObjectUUID] => fb8a49e6-798d-4a63-9ff7-ed0a2bdaf527
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28283646074/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 4
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28283646074/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 3
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [13] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28338052535
+                    [_refObjectUUID] => a6464184-6f23-4b25-a680-36b6037a5e93
+                    [_objectVersion] => 8
+                    [_refObjectName] => UserStory query based on Date Time input for both PlanExt and AccpetdExt
+                    [CreationDate] => 2015-01-13T21:47:47.218Z
+                    [_CreatedAt] => yesterday at 2:47 pm
+                    [ObjectID] => 28338052535
+                    [VersionId] => 8
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28338052535/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28338052535/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA149088
+                    [LastUpdateDate] => 2015-01-14T06:56:26.776Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28338052535/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => UserStory query based on Date Time input for both PlanExt and AccpetdExt
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28338052536
+                            [_refObjectUUID] => 1f87b1ad-ea19-4acc-973c-fd6424b0c249
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28338052535/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 5
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28338052535/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 5
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 4
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [14] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28351577495
+                    [_refObjectUUID] => 31142dad-eaf6-49df-98f5-d03664cf8464
+                    [_objectVersion] => 3
+                    [_refObjectName] => Rally Presentation
+                    [CreationDate] => 2015-01-14T03:22:29.109Z
+                    [_CreatedAt] => yesterday at 8:22 pm
+                    [ObjectID] => 28351577495
+                    [VersionId] => 3
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28351577495/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28351577495/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA149105
+                    [LastUpdateDate] => 2015-01-14T03:28:00.265Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28351577495/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Rally Presentation
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28351577496
+                            [_refObjectUUID] => 0a1a124b-bcd7-4a59-8dd5-88db191440c1
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28351577495/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 2
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28351577495/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 
+                    [BlockedReason] => 
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 2
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => Completed
+                    [TaskIndex] => 5
+                    [TimeSpent] => 0
+                    [ToDo] => 0
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+    [15] => Model\Task Object
+        (
+            [data:protected] => Array
+                (
+                    [_rallyAPIMajor] => 2
+                    [_rallyAPIMinor] => 0
+                    [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/task/28380964404
+                    [_refObjectUUID] => 2866d859-607d-4d23-8286-b96e21ba3c39
+                    [_objectVersion] => 2
+                    [_refObjectName] => Reproduce Bug
+                    [CreationDate] => 2015-01-14T15:02:00.452Z
+                    [_CreatedAt] => 1 minute ago
+                    [ObjectID] => 28380964404
+                    [VersionId] => 2
+                    [Subscription] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/subscription/1753949417
+                            [_refObjectUUID] => 4e17fb2e-92ae-4c8c-839b-2fd2b3b4645c
+                            [_refObjectName] => NetApp KS (APBU) - Formerly LSI
+                            [_type] => Subscription
+                        )
+
+                    [Workspace] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/workspace/2930602434
+                            [_refObjectUUID] => b3c0654f-299f-4203-9a2f-0c01662813d9
+                            [_refObjectName] => EPG
+                            [_type] => Workspace
+                        )
+
+                    [Changesets] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28380964404/Changesets
+                            [_type] => Changeset
+                            [Count] => 0
+                        )
+
+                    [Description] => 
+                    [Discussion] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28380964404/Discussion
+                            [_type] => ConversationPost
+                            [Count] => 0
+                        )
+
+                    [DisplayColor] => 
+                    [Expedite] => 
+                    [FormattedID] => TA149117
+                    [LastUpdateDate] => 2015-01-14T15:02:10.504Z
+                    [LatestDiscussionAgeInMinutes] => 
+                    [Milestones] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28380964404/Milestones
+                            [_type] => Milestone
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Name] => Reproduce Bug
+                    [Notes] => 
+                    [Owner] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/user/28003478443
+                            [_refObjectUUID] => 8dcf3c03-b37a-4cc1-95cf-562224afa396
+                            [_refObjectName] => Leon Xu
+                            [_type] => User
+                        )
+
+                    [Ready] => 
+                    [RevisionHistory] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/revisionhistory/28380964405
+                            [_refObjectUUID] => 2bebea6e-ef39-4360-877f-554b4699d3e3
+                            [_type] => RevisionHistory
+                        )
+
+                    [Tags] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28380964404/Tags
+                            [_type] => Tag
+                            [_tagsNameArray] => Array
+                                (
+                                )
+
+                            [Count] => 0
+                        )
+
+                    [Actuals] => 
+                    [Attachments] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/Task/28380964404/Attachments
+                            [_type] => Attachment
+                            [Count] => 0
+                        )
+
+                    [Blocked] => 1
+                    [BlockedReason] => Cannot reproduce bug
+                    [DragAndDropRank] => ,~xx1>jM&}yK2B+?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    [Estimate] => 4
+                    [Iteration] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/iteration/27394694923
+                            [_refObjectUUID] => d34c1cbc-550e-4580-b4bc-32bcde8090ec
+                            [_refObjectName] => 1501
+                            [_type] => Iteration
+                        )
+
+                    [Project] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/project/9788840326
+                            [_refObjectUUID] => 55acf799-efbd-42ac-9dc8-3613111ff81c
+                            [_refObjectName] => Spark >
+                            [_type] => Project
+                        )
+
+                    [Recycled] => 
+                    [Release] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/release/28030728192
+                            [_refObjectUUID] => 39485da9-ce31-4d20-b2bb-572d2ec5b673
+                            [_refObjectName] => Spark 2015 WSU
+                            [_type] => Release
+                        )
+
+                    [State] => In-Progress
+                    [TaskIndex] => 6
+                    [TimeSpent] => 0
+                    [ToDo] => 4
+                    [WorkProduct] => Array
+                        (
+                            [_rallyAPIMajor] => 2
+                            [_rallyAPIMinor] => 0
+                            [_ref] => https://rally1.rallydev.com/slm/webservice/v2.0/hierarchicalrequirement/28089192645
+                            [_refObjectUUID] => 81d45eaf-8bb8-4308-85e3-ce4d20db8a43
+                            [_refObjectName] => RESTful SERVICES:  EQI Restful Backend
+                            [_type] => HierarchicalRequirement
+                        )
+
+                    [c_CQExternalID] => 
+                    [c_CQResolver] => 
+                    [c_CQURL] => 
+                    [c_UpdateRallyBy] => 
+                    [_type] => Task
+                )
+
+            [errors:protected] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Time: 3.22 seconds, Memory: 3.75Mb
+
+OK (1 test, 1 assertion)
