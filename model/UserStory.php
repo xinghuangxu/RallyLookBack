@@ -115,7 +115,7 @@ class UserStory extends PropertyObject {
                     $us->returnToState($query['Time']['value']);
                     $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $query['Time'])['Accepted'];
                 } else {
-                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $query['Time'])['Accepted'];
+                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, "")['Accepted'];
                     $us->_ValidTo="9999-01-01T00:00:00.000Z";
                     $us->_ValidFrom=$us->LastUpdateDate;
                 }
