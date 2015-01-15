@@ -11,12 +11,6 @@ class TaskTest extends PHPUnit_Framework_TestCase {
 
     private $rally;
 
-    protected function setUp() {
-        $username = RallyUserName;
-        $password = RallyPassword;
-        $this->rally = \Helper\Rally::getInstance($username, $password);
-    }
-
     public function testFindWithOwnerName() {
         $tasks = Task::findWithOwnerName(RallyUserName);
         print_r($tasks);

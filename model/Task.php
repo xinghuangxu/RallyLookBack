@@ -43,7 +43,17 @@ class Task extends PropertyObject {
     }
     
     public function toHtmlRow(){
-        return "<div>".$this->Name."</div>";
+        return "<tr class=\"ts\"> ".$this->toTd(array(
+            $this->FormattedID,$this->Name,$this->State
+        ))."</tr>";
+    }
+    
+    public function toTd($fields){
+        $tds="";
+        foreach($fields as $f){
+            $tds.="<td style='padding-right: 10px;'>".$f."</td>";
+        }
+        return $tds;
     }
 
     /**

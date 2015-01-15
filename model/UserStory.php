@@ -11,6 +11,7 @@
 namespace Model;
 
 use \Helper\Rally as Rally;
+use Helper\RallyLookBack;
 
 class UserStory extends PropertyObject {
 
@@ -48,9 +49,9 @@ class UserStory extends PropertyObject {
         return null;
     }
 
-    public static function findWithPartialName($name) {
+    public static function findWithName($operator,$name) {
         $result = array();
-        $stories = Rally::getInstance()->find('userstory', "(Name contains $name)", '', "true");
+        $stories = Rally::getInstance()->find('userstory', "(Name $operator $name)", '', "true");
         foreach ($stories as $story) {
             $result[] = new UserStory($story);
         }
@@ -108,12 +109,44 @@ class UserStory extends PropertyObject {
         $query = isset($arg['query']) ? UserStory::parseQueryParam($arg['query']) : array();
         $results = array();
         if ($query['Name']) {
-            $results = UserStory::findWithPartialName($query['Name']['value']);
+            $results = UserStory::findWithName($query['Name']['operator'],$query['Name']['value']);
             foreach ($results as $us) {
-                $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, array_key_exists('Time', $query) ? $query['Time'] : "")['Accepted'];
+                if (array_key_exists('Time', $query)) {
+                    $us->returnToState($query['Time']['value']);
+                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $query['Time'])['Accepted'];
+                } else {
+                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $query['Time'])['Accepted'];
+                    $us->_ValidTo="9999-01-01T00:00:00.000Z";
+                    $us->_ValidFrom=$us->LastUpdateDate;
+                }
             }
         }
         return $results;
+    }
+
+    public function returnToState($time) {
+        $time=trim($time);
+        $timeStamp = strtotime($time);
+        $lastUpdatedDateTimeStamp = strtotime($this->LastUpdateDate);
+        $creationTimeStamp = strtotime($this->CreationDate);
+        if($timeStamp < $creationTimeStamp){
+            throw new \Exception("Object has not been created yet at time $time. Object Created At: ".$this->CreationDate);
+        }
+        if ($timeStamp < $lastUpdatedDateTimeStamp && $timeStamp > $creationTimeStamp) {
+            $data = array(
+                "find" => array(
+                    "ObjectID" => $this->ObjectID,
+                    "_ValidFrom" => "{\"\$lte\":\"$time\"}",
+                    "_ValidTo" => "{\"\$gt\":\"$time\"}"
+                ),
+                "fields" => "true",
+                "pagesize" => 100,
+                "limit" => 2,
+                "start" => 0
+            );
+            $lookbackObject = RallyLookBack::getInstance()->query($data);
+            $this->data=$lookbackObject->getObjectData(0);
+        }
     }
 
     public static function getPlanAndAcceptedPointEst($userStory, $time) {
@@ -122,7 +155,7 @@ class UserStory extends PropertyObject {
         $c = 0;
 //        $Epic_userstories = Rally::getInstance()->find('userstory', "(Name contains   \"$name\")  ", '', 'ScheduleState,Iteration,Children,DirectChildrenCount,Release,PlanEstimate');
         $EpicUS_PlndPts = $userStory->PlanEstimate; //US plan estimate
-        $ID = $userStory->_refObjectUUID;
+        $ID = $userStory->ObjectID;
         $result = Rally::getInstance()->get2('HierarchicalRequirement', "$ID"); //get the childre and store in $Glob_owner
         global $Glob_owner;
         $b = count($Glob_owner['Results']);
@@ -156,7 +189,7 @@ class UserStory extends PropertyObject {
                     if (!UserStory::shouldFilterByTime($CompleteArray[$x]['AcceptedDate'], $time['operator'], $time['value'])) {
                         $Accepted_Pts = $Accepted_Pts + $CompleteArray[$x]['PlanEstimate'];
                     }
-                }else{
+                } else {
                     $Accepted_Pts = $Accepted_Pts + $CompleteArray[$x]['PlanEstimate'];
                 }
                 //filter based on accepted date
@@ -176,7 +209,7 @@ class UserStory extends PropertyObject {
         $usTimeStam = strtotime($usTime);
         $filterTimeStam = strtotime($filterTime);
         $result = "";
-        eval(" \$result= ($filterTimeStam $operator $usTimeStam); ");
+        eval(" \$result= ($filterTimeStam < $usTimeStam); ");
         if ($result) {
             return true;
         }

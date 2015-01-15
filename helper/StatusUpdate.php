@@ -23,7 +23,7 @@ class StatusUpdate {
     public function getTasksUpdatedToday() {
         $result = array();
         foreach ($this->tasks as $task) {
-            if (date('Ymd') == date('Ymd', strtotime($task->LastUpdateDate) - 25200)) {
+            if (date('Ymd') == date('Ymd', strtotime($task->LastUpdateDate) - 25200)&& $task->State != "Defined") {
                 $result[] = $task;
             }
         }
@@ -61,65 +61,68 @@ class StatusUpdate {
     }
 
     public function question($question) {
-        return "<div class=\"question\">" . $question . "</div>";
+        return "<div style=\"margin-top: 25px;font-weight: bold;\" class=\"question\">" . $question . "</div>";
     }
 
-    public function answer($question) {
-        return "<div class=\"answer\">" . $question . "</div>";
+    public function answer($answer) {
+        return "<table style=\"margin-left: 10px;\" class=\"answer\">" . $answer . "</table>";
     }
 
     public function getHtmlReport() {
-        $html = <<<CSS
-            <style>
-                .question {
-                    margin-top: 25px;
-                    font-weight: bold;
-                }
-            </style>
-CSS;
+        $html = "";
         $completedHours = 0;
         //What you worked on today? (tasks udpated today)
         $tasks = $this->getTasksUpdatedToday();
         $html.=$this->question("What you worked on today?");
+        $answer="";
         foreach ($tasks as $task) {
-            $html.=$task->toHtmlRow();
+            $answer.=$task->toHtmlRow();
         }
-
+        $html.= $this->answer($answer);
+        
+        
         //How much progress you made? (Completed Task)
         $taskCompletedToday = $this->getTasksCompletedToday();
         $html.=$this->question("How much progress you made?");
+        $answer="";
         if (count($taskCompletedToday) > 0) {
             foreach ($taskCompletedToday as $task) {
-                $html.=$task->toHtmlRow();
+                $answer.=$task->toHtmlRow();
                 $completedHours+=$task->Actuals;
             }
         } else {
-            $html.="Not Much";
+            $answer.="<tr>Not Much<tr>";
         }
-
+         $html.= $this->answer($answer);
 
         //Did you run into any road block? If so what? (Blocked Tasks)
         $taskBlocked = $this->getTasksBlocked();
         $html.=$this->question("Did you run into any road block? If so what?");
+        $answer="";
         if (count($taskBlocked) > 0) {
-            $html.="Yes";
+            $answer.="<tr>Yes</tr>";
             foreach ($taskBlocked as $task) {
-                $html.=$task->toHtmlRow();
-                $html.="Block Reason: " . $task->BlockedReason;
+                $answer.=$task->toHtmlRow();
+                $answer.="<tr><td>Block Reason:</td> <td>" . $task->BlockedReason."</td></tr>";
             }
         } else {
-            $html.="No";
+            $answer.="<tr>No</tr>";
         }
+        $html.= $this->answer($answer);
+        
+        
         //How many hours did you spend today? (Completed Tasks Hours)
-        $html.=$this->question("How many hours did you spend today? $completedHours");
-
+        $html.=$this->question("How many hours did you spend today?");
+        $html.= $this->answer($completedHours);
+        
         //What are you planning to work on tomorrow? (In progress tasks)
         $tasksInProgress = $this->getTasksInProgress();
         $html.=$this->question("What are you planning to work on tomorrow?");
+        $answer="";
         foreach ($tasksInProgress as $task) {
-            $html.=$task->toHtmlRow();
+            $answer.=$task->toHtmlRow();
         }
-
+        $html.= $this->answer($answer);
         return $html;
     }
 

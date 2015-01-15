@@ -6,11 +6,8 @@
  * Simple class for interacting with RallyDev web services
  *
  * @version 2.0
- * @author St. John Johnson <stjohn@yahoo-inc.com>  && Leon Xu <xinghuangxu@gmail.com>
-
-
+ * @author  Leon Xu <xinghuangxu@gmail.com>
  *
-
  */
 
 namespace Helper;
@@ -479,12 +476,8 @@ class Rally {
      */
     protected function _post($method, array $params = array()) {
         $this->_setopt(CURLOPT_CUSTOMREQUEST, 'POST');
-
-
         $payload = json_encode(array('Content' => $params));
         $this->_setopt(CURLOPT_POSTFIELDS, $payload);
-
-
         return $this->_execute($this->_addKey($method));
     }
 

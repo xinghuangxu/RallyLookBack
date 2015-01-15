@@ -129,6 +129,7 @@ class Router
             $controller = new $controllerName;
             return $controller->{$this->action}($this->args);
         } catch (Exception $ex) {
+//            var_dump($ex->getTrace());
             echo json_encode(array("status" => 0, 'action' => $this->action, "message" => $ex->getMessage()));
         }
     }

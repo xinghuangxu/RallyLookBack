@@ -38,10 +38,6 @@ class UserStoryController
 
     public function index($arg)
     {
-        $username = "cxrachina@wichita.edu";
-        $password = "Sweety@09";
-        Rally::getInstance($username, $password);
-        
         $queryResult = \Model\UserStory::find($arg);
         
         $result = array();
