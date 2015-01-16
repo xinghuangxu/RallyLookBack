@@ -1,7 +1,14 @@
 Please put you rally login credential in config/config.php
 
 After deploy the app on your web server use the following url to get user story(s)
-http://DOMAINName/api.php/UserStory?query=(Time = 2015-02-14T15:59:20.717Z) AND (Name = "Synergy integration")
+http://DOMAINName/api.php/UserStory?query=(Name = "Synergy integration") & (Time = 2015-02-14T15:59:20.717Z)
 
 Use Time Only:
 http://DOMAINName/api.php/UserStory?query=(Name%20contains%20%22Synergy%22)
+
+
+Get a Userstory with a us name:
+http://localhost/EQI/api.php/UserStory?query=(Name%20=%20%22EqiUserStories%22)
+
+Fetch only wanted fileds( example: fetch=AcceptedPoints,PlanEstimate,Release )
+http://localhost/EQI/api.php/UserStory?query=(Name%20=%20%22EqiUserStories%22)&fetch=AcceptedPoints,PlanEstimate,Release

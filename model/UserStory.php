@@ -107,12 +107,17 @@ class UserStory extends PropertyObject {
     public static function find($arg) {
         $time = isset($arg['time']) ? $arg['time'] : "";
         $query = isset($arg['query']) ? $arg['query'] : "";
-        //$fetch = isset($arg['fetch']) ? $arg['fetch'] : "";
+        $fetch = isset($arg['fetch']) ? $arg['fetch'] : "";
         $order = isset($arg['order']) ? $arg['order'] : "";
-        $results = UserStory::findWithParams($query, $order,"true");
+        $results = UserStory::findWithParams($query, $order,$fetch);
         foreach ($results as $us) {
+            if(strpos($fetch,'AcceptedPoints')!==FALSE){
+                $acceptedPoints=UserStory::getAcceptedPointEst($us, $time);
+            }
             $us->returnToState($time);
-            $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $time)['Accepted'];
+            if(isset($acceptedPoints)){
+                $us->AcceptedPoints = $acceptedPoints;
+            }
         }
         return $results;
     }
@@ -147,32 +152,30 @@ class UserStory extends PropertyObject {
         }
     }
 
-    public static function getPlanAndAcceptedPointEst($userStory, $time) {
+    public static function getAcceptedPointEst($userStory, $time) {
         $child = array();
         $c = 0;
 //        $Epic_userstories = Rally::getInstance()->find('userstory', "(Name contains   \"$name\")  ", '', 'ScheduleState,Iteration,Children,DirectChildrenCount,Release,PlanEstimate');
-        $EpicUS_PlndPts = $userStory->PlanEstimate; //US plan estimate
-        $ID = $userStory->ObjectID;
-        $result = Rally::getInstance()->get2('HierarchicalRequirement', "$ID"); //get the childre and store in $Glob_owner
-        global $Glob_owner;
-        $b = count($Glob_owner['Results']);
+//        $EpicUS_PlndPts = $userStory->PlanEstimate; //US plan estimate
+        $ID = $userStory->_refObjectUUID;
+        $result = Rally::getInstance()->getChildren('HierarchicalRequirement', "$ID"); //get the childre and store in $Glob_owner
+        $b = count($result);
         for ($x = 0; $x < $b; $x++) {
-            $child[$c] = $Glob_owner['Results'][$x];
+            $child[$c] = $result[$x];
             $c++;
         }
-        $CompleteArray = array();
         $CompleteArray = $child;
         $Accepted_Pts = 0;
-        $Counter = count($Glob_owner['Results']);
+        $Counter = count($result);
         for ($y = 0; $y < $Counter; $y++) {
 
             if ($CompleteArray[$y]['DirectChildrenCount'] != 0) {
                 $I = $CompleteArray[$y]['_refObjectUUID'];
-                $result = Rally::getInstance()->get2('HierarchicalRequirement', "/$I");
+                $result = Rally::getInstance()->getChildren('HierarchicalRequirement', "/$I");
 
                 global $Glob_owner;
-                for ($i = 0; $i < count($Glob_owner['Results']); $i++) {
-                    $CompleteArray[] = $Glob_owner['Results'][$i];
+                for ($i = 0; $i < count($result); $i++) {
+                    $CompleteArray[] = $result[$i];
                 }
 
                 $Counter = 0;
@@ -187,16 +190,19 @@ class UserStory extends PropertyObject {
                         $Accepted_Pts = $Accepted_Pts + $CompleteArray[$x]['PlanEstimate'];
                     }
                 } else {
+//                    UserStory::printStory($CompleteArray[$x]);
                     $Accepted_Pts = $Accepted_Pts + $CompleteArray[$x]['PlanEstimate'];
                 }
                 //filter based on accepted date
             }
         }
-        if ($EpicUS_PlndPts == null) {
-            $EpicUS_PlndPts = '0';
-        }
-        return array('Planned' => $EpicUS_PlndPts, 'Accepted' => $Accepted_Pts);
+        return $Accepted_Pts;
     }
+    
+//    public static function printStory($us){
+//        print $us['_refObjectName']." ".$us['ScheduleState']." ".$us['PlanEstimate']."\n";
+//    }
+    
 
     /**
      *

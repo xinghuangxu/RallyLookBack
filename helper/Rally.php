@@ -14,13 +14,14 @@ namespace Helper;
 
 class Rally {
 
+    private $pagesize = 200;
     private static $instance = null;
 
     public static function getInstance($username = "", $password = "") {
         if (!isset(self::$instance)) {
             if ($username && $password) {
                 self::$instance = new Rally($username, $password);
-            }else{
+            } else {
                 self::$instance = new Rally(RallyUserName, RallyPassword);
             }
         }
@@ -347,10 +348,12 @@ class Rally {
         return reset($this->_get1($this->_addWorkspace($this->getRef($object, $id))));
         error_reporting(E_STRICT);
     }
-
-    public function get2($object, $id) {
-
-        return reset($this->_get2($this->_addWorkspace($this->getRef($object, $id))));
+    
+    /*
+     * get Children of a user story
+     */
+    public function getChildren($object, $id) {
+        return $this->_getChildren($this->_addWorkspace($this->getRef($object, $id)));
         error_reporting(E_STRICT);
     }
 
@@ -457,7 +460,7 @@ class Rally {
         return $this->_execute1($method);
     }
 
-    protected function _get2($method) {
+    protected function _getChildren($method) {
         $this->_setopt(CURLOPT_CUSTOMREQUEST, 'GET');
         $this->_setopt(CURLOPT_POSTFIELDS, '');
         //PRINT_R($method);
@@ -572,26 +575,29 @@ class Rally {
     }
 
     protected function _execute2($method) {
-        $method = ltrim($method, '/');
-
-        $url = "https://{$this->_domain}/slm/webservice/{$this->_version}/{$method}/children?fetch=PlanEstimate,_refObjectUUID,DirectChildrenCount,ScheduleState,AcceptedDate";
-        // print_r($url);
-        $this->_setopt(CURLOPT_URL, $url);               //print_r("URL-leonx:");
-
-        $response1 = curl_exec($this->_curl);
-
-        //echo $response;
-        //return $response;
-        if (curl_errno($this->_curl)) {
-            throw new RallyApiException(curl_error($this->_curl));
+        $startIndex = 1;
+        $pageSize = $this->pagesize;
+        $totalCount = 1000000;
+        $arrayResult = array();
+        while ($totalCount >= $startIndex) {
+            $method = ltrim($method, '/');
+            $url = "https://{$this->_domain}/slm/webservice/{$this->_version}/{$method}/children?fetch=PlanEstimate,_refObjectUUID,DirectChildrenCount,ScheduleState,AcceptedDate&start=$startIndex&pagesize=" . $this->pagesize;
+            // print_r($url);
+            $this->_setopt(CURLOPT_URL, $url);               //print_r("URL-leonx:");
+            $response1 = curl_exec($this->_curl);
+            if (curl_errno($this->_curl)) {
+                throw new RallyApiException(curl_error($this->_curl));
+            }
+            $info = curl_getinfo($this->_curl);
+            $result = $this->_result2($response1, $info);
+            $totalCount=$result['TotalResultCount'];
+            $pageResult=$result['Results'];
+            foreach($pageResult as $r){
+                $arrayResult[]=$r;
+            }
+            $startIndex+=$pageSize;
         }
-
-
-        $info = curl_getinfo($this->_curl);
-        // print_r("Response-Leonx");
-        // $object = json_decode($response, true);
-        //print_r($object);
-        return $this->_result2($response1, $info);
+        return $arrayResult;
     }
 
     /**
@@ -711,16 +717,8 @@ class Rally {
                 throw new RallyApiWarning(implode(PHP_EOL, $object['Warnings']));
             }
         }
-        //  print_r("ResultObject-Leonx");
-        //print_r($object);
-        global $Glob_owner;
-        $Glob_owner = $object;
-
-        //print_r($Glob_owner);
-
 
         error_reporting(E_ALL ^ E_STRICT);
-
         return $object;
     }
 
