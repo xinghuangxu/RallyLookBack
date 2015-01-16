@@ -1,2 +1,3 @@
 nbproject
-config/config.php
+config
+helper/cookie.txt
