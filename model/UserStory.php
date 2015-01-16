@@ -49,9 +49,9 @@ class UserStory extends PropertyObject {
         return null;
     }
 
-    public static function findWithName($operator,$name) {
+    public static function findWithParams($query, $order, $fetch) {
         $result = array();
-        $stories = Rally::getInstance()->find('userstory', "(Name $operator $name)", '', "true");
+        $stories = Rally::getInstance()->find('userstory', $query, $order, $fetch);
         foreach ($stories as $story) {
             $result[] = new UserStory($story);
         }
@@ -105,32 +105,27 @@ class UserStory extends PropertyObject {
      * [@return <array> <an array of TestRun objects]
      */
     public static function find($arg) {
-        $count = isset($arg['count']) ? $arg['count'] : null;
-        $query = isset($arg['query']) ? UserStory::parseQueryParam($arg['query']) : array();
-        $results = array();
-        if ($query['Name']) {
-            $results = UserStory::findWithName($query['Name']['operator'],$query['Name']['value']);
-            foreach ($results as $us) {
-                if (array_key_exists('Time', $query)) {
-                    $us->returnToState($query['Time']['value']);
-                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $query['Time'])['Accepted'];
-                } else {
-                    $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, "")['Accepted'];
-                    $us->_ValidTo="9999-01-01T00:00:00.000Z";
-                    $us->_ValidFrom=$us->LastUpdateDate;
-                }
-            }
+        $time = isset($arg['time']) ? $arg['time'] : "";
+        $query = isset($arg['query']) ? $arg['query'] : "";
+        //$fetch = isset($arg['fetch']) ? $arg['fetch'] : "";
+        $order = isset($arg['order']) ? $arg['order'] : "";
+        $results = UserStory::findWithParams($query, $order,"true");
+        foreach ($results as $us) {
+            $us->returnToState($time);
+            $us->AcceptedPoints = UserStory::getPlanAndAcceptedPointEst($us, $time)['Accepted'];
         }
         return $results;
     }
 
     public function returnToState($time) {
-        $time=trim($time);
+        if (!$time)
+            return;
+        $time = trim($time);
         $timeStamp = strtotime($time);
         $lastUpdatedDateTimeStamp = strtotime($this->LastUpdateDate);
         $creationTimeStamp = strtotime($this->CreationDate);
-        if($timeStamp < $creationTimeStamp){
-            throw new \Exception("Object has not been created yet at time $time. Object Created At: ".$this->CreationDate);
+        if ($timeStamp < $creationTimeStamp) {
+            throw new \Exception("Object has not been created yet at time $time. Object Created At: " . $this->CreationDate);
         }
         if ($timeStamp < $lastUpdatedDateTimeStamp && $timeStamp > $creationTimeStamp) {
             $data = array(
@@ -145,12 +140,14 @@ class UserStory extends PropertyObject {
                 "start" => 0
             );
             $lookbackObject = RallyLookBack::getInstance()->query($data);
-            $this->data=$lookbackObject->getObjectData(0);
+            $this->data = $lookbackObject->getObjectData(0);
+        } else {
+            $this->_ValidTo = "9999-01-01T00:00:00.000Z";
+            $this->_ValidFrom = $this->LastUpdateDate;
         }
     }
 
     public static function getPlanAndAcceptedPointEst($userStory, $time) {
-//        print_r($time);
         $child = array();
         $c = 0;
 //        $Epic_userstories = Rally::getInstance()->find('userstory', "(Name contains   \"$name\")  ", '', 'ScheduleState,Iteration,Children,DirectChildrenCount,Release,PlanEstimate');
@@ -186,7 +183,7 @@ class UserStory extends PropertyObject {
             if ($CompleteArray[$x]['DirectChildrenCount'] == 0 && $CompleteArray[$x]['ScheduleState'] ==
                     'Accepted') {
                 if ($time) {
-                    if (!UserStory::shouldFilterByTime($CompleteArray[$x]['AcceptedDate'], $time['operator'], $time['value'])) {
+                    if (!UserStory::shouldFilterByTime($CompleteArray[$x]['AcceptedDate'], $time)) {
                         $Accepted_Pts = $Accepted_Pts + $CompleteArray[$x]['PlanEstimate'];
                     }
                 } else {
@@ -205,7 +202,7 @@ class UserStory extends PropertyObject {
      *
      * [@return true/flase true should be filterd, false otherwise
      */
-    public static function shouldFilterByTime($usTime, $operator, $filterTime) {
+    public static function shouldFilterByTime($usTime, $filterTime) {
         $usTimeStam = strtotime($usTime);
         $filterTimeStam = strtotime($filterTime);
         $result = "";

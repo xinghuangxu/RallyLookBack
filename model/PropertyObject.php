@@ -67,28 +67,5 @@ abstract class PropertyObject
         }
     }
 
-    /**
-     * <pasre query string like ((cfw_version = 88.20.32.97)AND(test_type = runcheck)) >
-     *
-     * [@param  [string] <$queryStr> <query string from $_GET>]
-     * [@return <array> <key value pairs>]
-     */
-
-    public static function parseQueryParam($queryStr)
-    {
-        $query = array();
-        $queryStr = str_replace(array("(", ")"), " ", $queryStr); //replace all ( and )
-        $ands = preg_split("/and/i", $queryStr);
-        foreach ($ands as $and) {
-            $array=preg_split("/\s/", trim($and));
-            $strValue="";
-            for($i=2;$i<count($array);$i++){
-                $strValue.=' '.$array[$i];
-            }
-            list($key, $ope, $value) = array($array[0],$array[1],$strValue);
-            $query[$key] = array("key" => $key, "operator" => $ope, "value" => $value);
-        }
-        return $query;
-    }
 
 }

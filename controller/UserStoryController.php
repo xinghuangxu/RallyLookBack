@@ -44,6 +44,7 @@ class UserStoryController
         foreach ($queryResult as $testRun) {
             $result[] = $testRun->toArray();
         }
+        header('Content-Type: text/javascript');
         return json_encode(array(
             'TotalResultCount' => count($queryResult),
             'Result' => $result,
