@@ -5,26 +5,20 @@
  * @copyright 2015 NetApp, Inc.
  * @version 1.0.0
  */
-use  \Helper\Rally;
+use \Helper\Rally;
 
-class RallyLookBackTest extends PHPUnit_Framework_TestCase {
+class RallyTest extends PHPUnit_Framework_TestCase {
 
-    private $rally;
-    
-    protected function setUp() {
-        $username = RallyUserName;
-        $password = RallyPassword;
-        $this->rally=\Helper\Rally::getInstance($username, $password);
-    }
-    
-    public function testGetTasks(){
-        $tasks=$this->rally->find("task","(Owner.Name = \"xxxu3@wichita.edu\")","","true");
-        print_r($tasks);
+    public function testGetTasks() {
+        $tasks = Rally::getInstance()->find("task", "(Owner.Name = \"xxxu3@wichita.edu\")", "", "true");
+//        print_r($tasks);
+        $this->assertTrue(count($tasks) > 0);
     }
 
-//    public function testGetWorkSpace() {
-//        $workSpace=$this->rally->get("workspace","","true");
+    public function testGetWorkSpace() {
+        $workSpace = Rally::getInstance()->find("workspace", "", "", "true");
 //        print_r($workSpace);
-//    }
+        $this->assertTrue(count($workSpace) > 0);
+    }
 
 }

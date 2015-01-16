@@ -16,30 +16,30 @@ class RallyLookBackTest extends PHPUnit_Framework_TestCase {
     private $_debug = false;
     private $_agent = 'PHP - Rally Api - 1.4';
 
-//    public function testFindWithObjectId() {
-//        $url = "https://rally1.rallydev.com/analytics/v2.0/service/rally/workspace/2930602434/artifact/snapshot/query.js?find={%22ObjectID%22:28089192645}&fields=true&start=0&pagesize=100&limit=10";
-//        $this->_curl = curl_init();
-//        set_time_limit(0);
-//        $this->_setopt(CURLOPT_RETURNTRANSFER, true);
-//        $this->_setopt(CURLOPT_HTTPHEADER, $this->_headers_request);
-//        $this->_setopt(CURLOPT_VERBOSE, $this->_debug);
-//        $this->_setopt(CURLOPT_USERAGENT, $this->_agent);
-//        $this->_setopt(CURLOPT_HEADER, 0);
-//        $this->_setopt(CURLOPT_SSL_VERIFYHOST, 0);
-//        $this->_setopt(CURLOPT_SSL_VERIFYPEER, 0);
-//        $this->_setopt(CURLOPT_COOKIEJAR, dirname(__file__) . '/cookie.txt');
-//        // Authentication
-//        $this->_setopt(CURLOPT_USERPWD, RallyUserName . ":" . RallyPassword);
-//        $this->_setopt(CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-//
-//        $this->_setopt(CURLOPT_CUSTOMREQUEST, 'GET');
-//        $this->_setopt(CURLOPT_POSTFIELDS, '');
-//
-//        $this->_setopt(CURLOPT_URL, $url);
-//        $response = curl_exec($this->_curl);
-//        $array = (json_decode($response, true));
-//        $this->assertTrue(count($array['Results']) > 0);
-//    }
+    public function testFindWithObjectId() {
+        $url = "https://rally1.rallydev.com/analytics/v2.0/service/rally/workspace/2930602434/artifact/snapshot/query.js?find={%22ObjectID%22:28089192645}&fields=true&start=0&pagesize=100&limit=10";
+        $this->_curl = curl_init();
+        set_time_limit(0);
+        $this->_setopt(CURLOPT_RETURNTRANSFER, true);
+        $this->_setopt(CURLOPT_HTTPHEADER, $this->_headers_request);
+        $this->_setopt(CURLOPT_VERBOSE, $this->_debug);
+        $this->_setopt(CURLOPT_USERAGENT, $this->_agent);
+        $this->_setopt(CURLOPT_HEADER, 0);
+        $this->_setopt(CURLOPT_SSL_VERIFYHOST, 0);
+        $this->_setopt(CURLOPT_SSL_VERIFYPEER, 0);
+        $this->_setopt(CURLOPT_COOKIEJAR, dirname(__file__) . '/cookie.txt');
+        // Authentication
+        $this->_setopt(CURLOPT_USERPWD, RallyUserName . ":" . RallyPassword);
+        $this->_setopt(CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+
+        $this->_setopt(CURLOPT_CUSTOMREQUEST, 'GET');
+        $this->_setopt(CURLOPT_POSTFIELDS, '');
+
+        $this->_setopt(CURLOPT_URL, $url);
+        $response = curl_exec($this->_curl);
+        $array = (json_decode($response, true));
+        $this->assertTrue(count($array['Results']) > 0);
+    }
 
     public function testCreation() {
         $lookbackApi = RallyLookBack::getInstance();
