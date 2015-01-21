@@ -11,6 +11,7 @@ class StatusUpdateTest extends PHPUnit_Framework_TestCase {
 
     public function testHtml() {
         $myStatus=new StatusUpdate(RallyUserName);
-        print $myStatus->getHtmlReport();
+        $htmlResult= $myStatus->getHtmlReport();
+        $this->assertTrue(strpos($htmlResult, 'class=')!=FALSE);
     }
 }

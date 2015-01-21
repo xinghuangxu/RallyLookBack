@@ -16,9 +16,11 @@ class EmailTest extends PHPUnit_Framework_TestCase {
                 'X-Mailer: PHP/' . phpversion();
 
         if (mail($to, $subject, $message, $headers)) {
-            echo 'Email sent successfully!';
+            $this->assertTrue(TRUE);
+//            echo 'Email sent successfully!';
         } else {
-            die('Failure: Email was not sent!');
+            $this->assertTrue(FALSE);
+//            die('Failure: Email was not sent!');
         }
     }
 

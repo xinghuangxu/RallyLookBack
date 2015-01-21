@@ -41,7 +41,7 @@ class RallyLookBackTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue(count($array['Results']) > 0);
     }
 
-    public function testCreation() {
+    public function testGetLookBackObject() {
         $lookbackApi = RallyLookBack::getInstance();
         $params = array(
             "find" => array(
@@ -52,8 +52,8 @@ class RallyLookBackTest extends PHPUnit_Framework_TestCase {
             "limit" => 2,
             "start" => 0
         );
-//        $lookbackObject = $lookbackApi->query($params);
-//        print_r($lookbackObject);
+        $lookbackObject = $lookbackApi->query($params);
+        $this->assertTrue(get_class($lookbackObject)=="Helper\LookBackObject");
     }
 
     public function testGetUrlParam() {
@@ -84,7 +84,7 @@ class RallyLookBackTest extends PHPUnit_Framework_TestCase {
             "limit" => 2,
             "start" => 0
         ));
-        print_r($lookbackObject);
+        $this->assertTrue(get_class($lookbackObject)=="Helper\LookBackObject");
     }
 
     protected function _setopt($option, $value) {

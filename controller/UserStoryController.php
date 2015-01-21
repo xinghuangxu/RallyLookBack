@@ -17,20 +17,7 @@ use \Helper\Rally as Rally;
 class UserStoryController
 {
     /*
-     * <handle show>
-     *
-     * [@param  [array] <$arg> <key value pair from $_GET>]
-     * [@return <string> <return json encoded array]
-     */
-
-//    public function show($arg)
-//    {
-//        $testRun = TestRun::findWithId($arg['id']);
-//        return json_encode(array("status" => 1, "data" => $testRun->toJSON()));
-//    }
-//
-    /*
-     * <handle show>
+     * <handle index>
      *
      * [@param  [array] <$arg> <key value pair from $_GET>]
      * [@return <string> <return json encoded array]
@@ -44,7 +31,9 @@ class UserStoryController
         foreach ($queryResult as $testRun) {
             $result[] = $testRun->toArray();
         }
-        header('Content-Type: text/javascript');
+        if (!headers_sent()) {
+            header('Content-Type: text/javascript');
+        }
         return json_encode(array(
             'TotalResultCount' => count($queryResult),
             'Result' => $result,

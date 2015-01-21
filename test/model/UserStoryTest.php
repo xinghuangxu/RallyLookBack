@@ -17,15 +17,14 @@ class UserStoryTest extends PHPUnit_Framework_TestCase {
     public function testUserStoryData() {
         $us = UserStory::findWithParams("(Name contains \"Spark\")", "", "true");
         $userStory = $us[0];
-        print_r($userStory);
+//        print_r($userStory);
         $this->assertTrue($userStory->PlanEstimate > 0);
         $this->assertTrue(strpos(strtolower($userStory->_refObjectName), 'spark') !== FALSE);
     }
 
     public function testPlanAndAcceptedPointEst() {
         $us = UserStory::findWithParams("(Name contains \"Spark\")", "", "true");
-        $values = \Model\UserStory::getPlanAndAcceptedPointEst($us[0], "");
-        $this->assertTrue($values['Planned']>=0);
-        $this->assertTrue($values['Accepted']>=0);
+        $values = \Model\UserStory::getAcceptedPointEst($us[0], "");
+        $this->assertTrue($values>=0);
     }
 }

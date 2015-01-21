@@ -17,7 +17,7 @@ http://localhost/EQI/api.php/UserStory?query=(Name contains  "New UI - Front End
 
 
 To test the time parameter run:
-http://localhost/EQI/api.php/UserStory?query=(Name contains  "New UI - Front End ")&time=2013-06-14T15:59:20.717Z&fetch=true
+http://localhost/EQI/api.php/UserStory?query=(Name contains  "New UI - Front End")&time=2013-06-14T15:59:20.717Z&fetch=true
 A year later:
-http://localhost/EQI/api.php/UserStory?query=(Name contains  "New UI - Front End ")&time=2014-06-14T15:59:20.717Z&fetch=true
+http://localhost/EQI/api.php/UserStory?query=(Name contains  "New UI - Front End")&time=2014-06-14T15:59:20.717Z&fetch=true
 you can see both the plan estimate and acceptedpoint changes
