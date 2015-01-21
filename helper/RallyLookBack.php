@@ -57,20 +57,8 @@ class RallyLookBack {
     }
 
     public function query($params) {
-//        $fields_string = "";
-//        foreach ($params as $key => $value) {
-//            $fields_string .= $key . '=' . ($value) . '&';
-//        }
-//        rtrim($fields_string, '&');
-//        $this->_setopt(CURLOPT_POST, count($params));
-//        $this->_setopt(CURLOPT_POSTFIELDS, $fields_string);
-//        $payload = json_encode(array('Content' => $params));
-//        print $payload;
-//        $this->_setopt(CURLOPT_POSTFIELDS, $payload);
-       
         $this->_setopt(CURLOPT_CUSTOMREQUEST, 'GET');
         $this->_setopt(CURLOPT_POSTFIELDS, '');
-        //find={%22ObjectID%22:28089192645}&fields=true&start=0&pagesize=100&limit=10
         return $this->_execute($this->parseArrayToUrlParam($params));
     }
     
@@ -85,9 +73,9 @@ class RallyLookBack {
                if(array_key_exists('0',$value)){ //number array param
                    $realvalue="[";
                    foreach($value as $v){
-                       $realvalue.=($v.",");
+                       $realvalue.=("\"".$v."\",");
                    }
-                   rtrim($realvalue, ",");
+                   $realvalue=substr($realvalue, 0,-1);
                    $realvalue.="]";
                }else{ //hash table param
                    $realvalue="{";

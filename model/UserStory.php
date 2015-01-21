@@ -109,12 +109,15 @@ class UserStory extends PropertyObject {
         $query = isset($arg['query']) ? $arg['query'] : "";
         $fetch = isset($arg['fetch']) ? $arg['fetch'] : "";
         $order = isset($arg['order']) ? $arg['order'] : "";
+        if($fetch&&$fetch!="true"){
+            $fetch.=",CreationDate,LastUpdateDate,ObjectID";
+        }
         $results = UserStory::findWithParams($query, $order,$fetch);
         foreach ($results as $us) {
-            if(strpos($fetch,'AcceptedPoints')!==FALSE){
+            if(strpos($fetch,'AcceptedPoints')!==FALSE||$fetch=="true"){
                 $acceptedPoints=UserStory::getAcceptedPointEst($us, $time);
             }
-            $us->returnToState($time);
+            $us->returnToState($time,$fetch);
             if(isset($acceptedPoints)){
                 $us->AcceptedPoints = $acceptedPoints;
             }
@@ -122,7 +125,10 @@ class UserStory extends PropertyObject {
         return $results;
     }
 
-    public function returnToState($time) {
+    public function returnToState($time,$fetch="") {
+        if($fetch!="true"){
+            $fetch=explode(",",$fetch);
+        }
         if (!$time)
             return;
         $time = trim($time);
@@ -139,7 +145,7 @@ class UserStory extends PropertyObject {
                     "_ValidFrom" => "{\"\$lte\":\"$time\"}",
                     "_ValidTo" => "{\"\$gt\":\"$time\"}"
                 ),
-                "fields" => "true",
+                "fields" => $fetch,//["_ValidFrom","_ValidTo","ObjectID","State"]',
                 "pagesize" => 100,
                 "limit" => 2,
                 "start" => 0

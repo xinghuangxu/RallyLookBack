@@ -1,7 +1,7 @@
 Please put you rally login credential in config/config.php
 
 After deploy the app on your web server use the following url to get user story(s)
-http://DOMAINName/api.php/UserStory?query=(Name = "Synergy integration") & (Time = 2015-02-14T15:59:20.717Z)
+http://DOMAINName/api.php/UserStory?query=(Name = "Synergy integration") & time = 2015-02-14T15:59:20.717Z
 
 Use Time Only:
 http://DOMAINName/api.php/UserStory?query=(Name%20contains%20%22Synergy%22)
@@ -12,3 +12,10 @@ http://localhost/EQI/api.php/UserStory?query=(Name%20=%20%22EqiUserStories%22)
 
 Fetch only wanted fileds( example: fetch=AcceptedPoints,PlanEstimate,Release )
 http://localhost/EQI/api.php/UserStory?query=(Name%20=%20%22EqiUserStories%22)&fetch=AcceptedPoints,PlanEstimate,Release
+
+use time as a parameter
+http://localhost/EQI/api.php/UserStory?query=(Name%20contains%20%22New%20UI%20-%20Front%20End%22)&time=2013-06-14T15:59:20.717Z&fetch=AcceptedPoints,PlanEstimate
+
+http://localhost/EQI/api.php/UserStory?query=(Name%20contains%20%22New%20UI%20-%20Front%20End%22)&time=2013-06-14T15:59:20.717Z&fetch=true
+A year later, you can see both the plan estimate and acceptedpoint changes
+http://localhost/EQI/api.php/UserStory?query=(Name%20contains%20%22New%20UI%20-%20Front%20End%22)&time=2014-06-14T15:59:20.717Z&fetch=true
