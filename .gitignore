@@ -1,3 +1,5 @@
-nbproject
-config
-helper/cookie.txt
+/nbproject
+/config/config.php
+/helper/cookie.txt
+/test/helper/cookie.txt
+.DS_Store
